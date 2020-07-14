@@ -20,7 +20,7 @@ func Connect() (DatabasePrisma, error) {
 		logrus.Errorf("Error at connect to Client: %s", err)
 		return database, err
 	}
-	logrus.Infof("Database sucessfully connected!")
+	logrus.Infof("Database successfully connected!")
 	return database, nil
 }
 

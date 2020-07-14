@@ -14,6 +14,7 @@ var rootCmd = &cobra.Command{
 	Short: "Stop Analyzing API Comand Line",
 }
 
+// Execute Stop Analyzing API
 func Execute() {
 	if err := rootCmd.Execute(); err != nil {
 		logrus.Error(err)

@@ -14,12 +14,12 @@ func TestListAllTags(t *testing.T) {
 
 	dbCli, err := Connect()
 	if err != nil {
-		fmt.Errorf("Error at test List All Tags - Connect to Database: %s", err)
+		fmt.Println("Error at test List All Tags - Connect to Database:", err)
 	}
 	defer dbCli.Disconnect()
 	tags, err := dbCli.GetAllTags()
 	if err != nil {
-		fmt.Errorf("Error at test List All Tags - Get All Tags: %s", err)
+		fmt.Println("Error at test List All Tags - Get All Tags:", err)
 	}
 
 	expectedResult := []TagModel{}
